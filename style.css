@@ -108,6 +108,7 @@ button {
 }
 
 section {
+    width: 100%;
     padding: var(--spacing-2xl) 0;
 }
 
@@ -142,6 +143,7 @@ section {
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     padding: var(--spacing-md) 0;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -236,6 +238,7 @@ section {
    ============================================ */
 .hero {
     position: relative;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -251,6 +254,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
     background: var(--gradient-primary);
     z-index: 1;
     overflow: hidden;
@@ -834,6 +838,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
     background: rgba(0, 0, 0, 0.95);
     z-index: 2000;
     align-items: center;
@@ -1331,11 +1336,13 @@ section {
         flex-direction: column;
         background-color: var(--color-white);
         width: 100%;
+        max-width: 100vw;
         text-align: center;
         transition: 0.3s;
         box-shadow: var(--shadow-lg);
         padding: var(--spacing-lg) 0;
         gap: 0;
+        overflow-x: hidden;
     }
 
     .nav-menu.active {
